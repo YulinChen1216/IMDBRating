@@ -1,7 +1,8 @@
 package edu.bristol;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class IMDBRatingTest
 {
@@ -17,4 +18,3 @@ public class IMDBRatingTest
         System.out.println(averageRating);
         assertEquals(5.5, averageRating, "average should be 5.5 but it was " + averageRating);
     }
-}
