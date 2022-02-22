@@ -5,9 +5,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ Yulin ]
+    branches: [ main ]
   pull_request:
-    branches: [ Yulin ]
+    branches: [ main ]
 
 jobs:
   build:
