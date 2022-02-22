@@ -8,13 +8,13 @@ public class IMDBRatingTest
     @Test
     public void testAverageRating()
     {
-        float averageRating;
+        float averageRating=0;
         IMDBRating rater = new IMDBRating();
 
-        averageRating = rater.addNewRating(2);
-        assertTrue(averageRating == 2.0, "Adding 1st rating: average should be 2.0");
-
-        averageRating = rater.addNewRating(4);
-        assertTrue(averageRating == 3.0, "Adding 2nd rating: average should be 3.0");
+        for(int i=1;i<=10;i++){
+            averageRating = rater.addNewRating(i);
+        }
+        System.out.println(averageRating);
+        assertEquals(5.5, averageRating, "average should be 5.5 but it was " + averageRating);
     }
 }
