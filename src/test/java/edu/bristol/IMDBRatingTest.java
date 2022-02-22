@@ -18,3 +18,4 @@ public class IMDBRatingTest
         System.out.println(averageRating);
         assertEquals(5.5, averageRating, "average should be 5.5 but it was " + averageRating);
     }
+}
